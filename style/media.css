@@ -599,6 +599,8 @@
 
     .min_map{
         display: block;
+        width: 280px;
+        height: 400px;
     }
     .big_map{
         display: none;
@@ -616,6 +618,135 @@
     }
     .hero__bg_long::after{
         width: 234px;
+    }
+    .hero__main-title {
+        width: 175px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hero__name {
+        font-size: 37px;
+        line-height: 46.5px;
+    }
+
+    .hero__wait {
+        font-size: 13px;
+        width: 194px;
+    }
+
+    .hero__time {
+        font-size: 17px;
+        width: 100px;
+        margin: 70px 0 0;
+        text-align: center;
+    }
+
+    .hero__time::before {
+        top: -59px;
+        height: 48px;
+    }
+
+    .hero__place {
+        width: 100px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .info{
+        padding: 60px 0;
+    }
+    .info__main-title {
+        font-size: 24px;
+        margin-bottom: 37px;
+    }
+
+    .info__main-title2 {
+        font-size: 24px;
+        margin-bottom: 37px;
+    }
+
+    .info__main-title::before {
+        height: 78px;
+        bottom: -97px;
+    }
+
+    .fa-clock{
+        font-size: 15px;
+    }
+
+    .fa-map-marker-alt{
+        font-size: 15px;
+    }
+
+    .info__title {
+        font-size: 15px;
+    }
+
+    .info__time {
+        width: 103px;
+        font-size: 13px;
+    }
+
+    .map{
+        padding: 22px 0;
+    }
+
+    .footer__title {
+        font-size: 21px;
+    }
+    .footer__title::before{
+        width: 2px;
+        top: -50px;
+    }
+    .footer__copy{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 290px){
+    .container {
+        max-width: 270px;
+    }
+    .min_map{
+        width: 270px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        max-width: 250px;
+    }
+
+    .header{
+        top: 10px;
+    }
+    .header__nav-link {
+        font-size: 15px;
+    }
+
+    .min_map{
+        display: block;
+        width: 250px;
+        height: 400px;
+    }
+    .big_map{
+        display: none;
+    }
+    .hero{
+        padding: 80px 0 35px;
+    }
+    .hero__bg_long {
+        width: 233px;
+        height: 288px;
+        padding: 50px 20px;
+    }
+    .hero__bg_long::before{
+        width: 212px;
+    }
+    .hero__bg_long::after{
+        width: 212px;
     }
     .hero__main-title {
         width: 175px;
