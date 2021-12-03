@@ -1,0 +1,268 @@
+@import "./fonts.css";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 980px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex_center_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d-flex_center_space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+.row_col6 {
+  width: 50%;
+}
+
+.fa-clock {
+  font-size: 25px;
+  color: #B09259;
+}
+
+.fa-map-marker-alt {
+  font-size: 25px;
+  color: #B09259;
+}
+
+.min_map {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+.header__nav-link {
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+.header__nav-link:hover {
+  position: relative;
+  color: #bbceca;
+}
+.header__nav-link:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  right: 0;
+  left: 0;
+  bottom: -5px;
+  margin: 0 auto;
+  background-color: #9a7d40;
+}
+
+.hero {
+  height: calc(100vh - 200px);
+  padding: 100px 0;
+  background: url("../images/cloudy-2446630_1280.jpg") #fff no-repeat center/cover;
+}
+.hero__main-title {
+  color: #B09259;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.hero__name {
+  color: #B09259;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+.hero__time {
+  position: relative;
+  color: #B09259;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 150px 0 0;
+}
+.hero__time::before {
+  position: absolute;
+  content: "";
+  background-color: #B09259;
+  margin: 0 auto;
+  top: -110px;
+  right: 0;
+  left: 0;
+  height: 90px;
+  width: 2px;
+}
+.hero__wait {
+  color: #B09259;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  width: 350px;
+}
+.hero__place {
+  color: #B09259;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero__bg_long {
+  position: relative;
+  width: 469px;
+  height: 393px;
+  background: #ffffff;
+  padding: 42px 133px;
+}
+.hero__bg_long::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 630px;
+  background: #ffffff;
+  height: 30px;
+}
+.hero__bg_long::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 630px;
+  background: #ffffff;
+  height: 30px;
+}
+
+.info {
+  background: #DFEFF2;
+  padding: 100px 0;
+}
+.info__main-title {
+  position: relative;
+  text-align: center;
+  color: #B09259;
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 78px;
+}
+.info__main-title::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 116px;
+  bottom: -120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #B09259;
+}
+.info__main-title2 {
+  text-align: center;
+  color: #B09259;
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 78px;
+}
+.info__title {
+  color: #B09259;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.info__time {
+  color: #B09259;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.map {
+  padding: 50px 0;
+}
+
+.footer {
+  padding: 50px 0;
+  height: 100px;
+  background: #B09259;
+}
+.footer__title {
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.footer__title::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 3px;
+  background: #fff;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.footer__title::after {
+  position: absolute;
+  content: "";
+  transform: rotate(90deg);
+  border-right: 3px solid #fff;
+  width: 10px;
+  background: #fff;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.footer__copy {
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=new-style.css.map */

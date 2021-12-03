@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style/new-style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <title>Гульназ & Дархан</title>
+</head>
+<body>
+<header class="header" id="top-header">
+    <div class="container">
+        <div class="navigation ">
+            <nav class="nav-bar d-flex_center_space-around">
+                <script src="script/script.js">
+
+                </script>
+                <a class="scroll-to header__nav-link" href="#p1">Подробности</a>
+                <a class="scroll-to header__nav-link" href="#p2">Карта</a>
+                <a class="scroll-to header__nav-link" href="#">Спасибо</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container d-flex_center">
+        <div class="hero__bg_long d-flex_center_column">
+            <h2 class="hero__main-title">Приглашение на свадьбу</h2>
+            <h1 class="hero__name">Гульназ и Дархан</h1>
+            <h3 class="hero__wait">Будем очень рады видеть вас в этот чудесный день</h3>
+            <h3 class="hero__time">4 января 2022</h3>
+            <h3 class="hero__place">Тойкана "Султан"</h3>
+        </div>
+    </div>
+</section>
+
+<section class="info">
+    <div class="container">
+        <a id="p1"><h2 class="info__main-title">Подробности</h2></a>
+        <div class="row d-flex">
+            <div class="row_col6">
+                <div class="info_block d-flex_center_column">
+                    <i class="far fa-clock"></i>
+                    <h3 class="info__title">Когда</h3>
+                    <h3 class="info__time">4 января 2022, 16:00</h3>
+                </div>
+            </div>
+            <div class="row_col6 d-flex_center_column">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="info__title">Где</h3>
+                <h3 class="info__time"><a href="https://yandex.ru/maps/213/moscow/?from=api-maps&ll=37.605638%2C55.600208&mode=usermaps&source=jsapi_2_1_79&um=constructor%3A415976cc14e039480b540fa01bac07d172d3b8234033f608591e820e2717891b&utm_medium=localhost%3A63342&utm_source=api-maps&z=14">Москва, проезд Россошанского д.2А, Тойкана "Султан", 2 этаж</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map">
+    <div class="container">
+        <a id="p2"><h2 class="info__main-title2">Карта</h2></a>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A415976cc14e039480b540fa01bac07d172d3b8234033f608591e820e2717891b&amp;source=constructor" width="100%" height="447" frameborder="0" class="big_map"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A415976cc14e039480b540fa01bac07d172d3b8234033f608591e820e2717891b&amp;source=constructor" class="min_map" width="280" height="400" frameborder="0"></iframe>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__info d-flex_center_column">
+            <h2 class="footer__title"><a class="scroll-to" href="#top-header">Наверх</a></h2>
+            <h4 class="footer__copy">© 2021 Дархан & Гульназ</h4>
+        </div>
+    </div>
+</footer>
+<script>
+    const anchors = document.querySelectorAll('a.scroll-to')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            const blockID = anchor.getAttribute('href')
+
+            document.querySelector(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+</script>
+</body>
+</html>
