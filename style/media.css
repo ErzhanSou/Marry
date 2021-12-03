@@ -2,6 +2,9 @@
     .container{
         max-width: 930px;
     }
+    .hero{
+        height: 800px;
+    }
     .header__nav-lin{
         font-size: 22px;
     }
@@ -59,6 +62,7 @@
     .container{
         max-width: 900px;
     }
+
     .header__nav-lin{
         font-size: 23px;
     }
@@ -117,7 +121,9 @@
     .container {
         max-width: 850px;
     }
-
+    .hero{
+        height: 600px;
+    }
     .header__nav-lin {
         font-size: 20px;
     }
@@ -378,6 +384,41 @@
     }
 }
 
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 550px;
+    }
+    .hero{
+        height: 500px;
+        padding: 110px 0 5px;
+    }
+    .hero__name{
+        margin: 15px 0;
+    }
+    .hero__bg_long{
+        width: 199px;
+    }
+    .hero__time{
+        margin: 50px 0 0;
+    }
+    .hero__time::before{
+        top: -43px;
+        height: 41px;
+    }
+    .hero__bg_long::before{
+        width: 377px;
+    }
+    .hero__bg_long::after{
+        width: 377px;
+    }
+    .info__time{
+        width: 177px;
+
+    }
+}
+
+
 @media (max-width: 500px) {
     .container {
         max-width: 450px;
@@ -474,6 +515,29 @@
     }
     .footer__copy{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container{
+        max-width: 390px;
+    }
+    .hero{
+        padding: 110px 0 5px;
+    }
+    .hero__bg_long{
+        width: 150px;
+        padding: 42px 99px;
+    }
+
+    .hero__bg_long::before{
+        width: 293px;
+    }
+    .hero__bg_long::after{
+        width: 293px;
+    }
+    .info__time{
+        width: 177px;
     }
 }
 
@@ -584,6 +648,28 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 350px) {
+    .container{
+        max-width: 300px;
+    }
+
+    .hero__bg_long{
+        width: 150px;
+        padding: 42px 79px;
+    }
+
+    .hero__bg_long::before{
+        width: 268px;
+    }
+    .hero__bg_long::after{
+        width: 268px;;
+    }
+    .hero__wait{
+        width: 260px;
+    }
+}
+
 
 @media (max-width: 300px) {
     .container {
@@ -711,6 +797,17 @@
     }
     .min_map{
         width: 270px;
+    }
+    .hero__bg_long {
+        width: 233px;
+        height: 288px;
+        padding: 50px 20px;
+    }
+    .hero__bg_long::before{
+        width: 212px;
+    }
+    .hero__bg_long::after{
+        width: 212px;
     }
 }
 
